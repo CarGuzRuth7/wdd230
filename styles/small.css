@@ -1,34 +1,33 @@
-
 body{
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 2;
     background-color: #FFFBEB;
     font-family: 'Alegreya Sans', sans-serif;
 }
 header, main, footer{
     margin: 1.25rem auto;
-    max-width: 600px;
+    max-width: 600px;  
     
 }
 header, footer{
     background-color: #363062;
     color: azure;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px #6a6473;
-}
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 1rem;  
+
 }
-footer{
-    padding: 1rem;
+main{
+    padding: 0 1rem;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
 }
 img{
-    width: 25%;
-    height: 25%;
+    width: 160px;
+    height: auto;
     border: 5px solid #495579;
 }
 a{

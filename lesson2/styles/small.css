@@ -7,7 +7,7 @@ header, footer{
     background-color: #513C31;
     color:#FEEFE5;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 main{
     display: grid;

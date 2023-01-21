@@ -13,12 +13,12 @@ h1, h2, h3{
     font-family: 'Times New Roman', Times, serif;
     
 }
-header{
+header, footer{
     background-color: #5C6479;
     color: #EFF6EE;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    
 }
 nav ul{
     list-style: none;
@@ -43,7 +43,6 @@ img{
     height: auto;
     margin: 1.5rem;
 }
-
 hr{
     margin: 1.8rem;
     background-color: #DC493A;

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+}
+main{
+    margin: 2rem auto;
+}
+body{
+    font-family: 'Bitter', serif;
+    background-color: #EFF6EE;
+    color: #273043;
+    
+}
+header, footer{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #273043;
+    color: #EFF6EE;
+    padding: 1.5rem 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+nav button{
+    margin: .2rem ;
+    background: transparent;
+    font-size: 2rem;
+    color: #EFF6EE;
+    border: none;
+    align-items: flex-end;
+    
+}
+nav button.open:hover{
+    color:#DC493A
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+header div nav.open{
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 1px solid #EFF6EE;
+    background-color: #5C6479;
+    box-shadow: 2px 0px 1000px 20px #3C3F4A;
+}
+nav ul.open{
+    display: block;
+    
+}
+nav ul li a{
+    display: block;
+    padding: 1rem ;
+    text-decoration: none;
+    color: #EFF6EE;
+    border: 1px solid #EFF6EE;
+}
+nav ul li.active a{
+    background-color: #EFF6EE;
+    color: #273043;
+}
+
+nav ul li a:hover{
+    background-color: #DC493A;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+.primaryNav{
+    margin-left: auto;
+    overflow: hidden;
+    position: relative;
+}
+hr{
+    margin: 1.5rem;
+    height: 1px;
+    background-color: #5C6479;
+    color: #5C6479;
+}
+section{
+    margin: 0.5rem 1rem;
+    padding: 1em 5em 5em 1em;
+    border: 1px solid #5C6479;
+    background-color: azure;
+}
+.logo-img{
+    width: 80%;
+    height: auto;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+#date{
+    margin: 2rem 0;
+    padding: 0.5rem;
+    background-color: #5C6479;
+    display: block;
+    font-family: "Bitter", sans-serif;
+}
+.social-media img{
+    width: 35px;
+    height: auto;
+    padding: 0.3rem;
+}
+.spotlights, .spotlights ol {
+    list-style: none;
+    padding: 0;
+}
+.spotlights ol li{
+    border: 1px solid #273043;
+    padding: 1rem 5rem 5rem 1rem;
+    margin: .3rem;
+}
+a{
+    color: #EFF6EE;
+    text-decoration: none;
+}

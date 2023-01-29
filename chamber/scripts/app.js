@@ -3,6 +3,7 @@ function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
     document.querySelector("nav").classList.toggle("open");
+	document.querySelector("sporlights").classList.toggle("open");
     
 }
 

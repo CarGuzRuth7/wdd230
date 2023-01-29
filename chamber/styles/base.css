@@ -74,12 +74,18 @@ nav ul li a:hover{
     background-color: #DC493A;
 }
 
-#hamburgerBtn span:nth-child(1) {display: block;}
-#hamburgerBtn span:nth-child(2) {display: none;}
+#hamburgerBtn span:nth-child(1), 
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
 
-#hamburgerBtn.open span:nth-child(1) {display: none;}
-#hamburgerBtn.open span:nth-child(2) {display: block;}
+}
+#hamburgerBtn span:nth-child(2), 
+#hamburgerBtn.open span:nth-child(1),
+.spotlights div:nth-child(3), 
+.join {
+    display: none;
 
+}
 .primaryNav{
     margin-left: auto;
     overflow: hidden;
@@ -93,9 +99,13 @@ hr{
 }
 section{
     margin: 0.5rem 1rem;
-    padding: 1em 5em 5em 1em;
     border: 1px solid #5C6479;
     background-color: azure;
+    height: 15em;
+
+}
+h4{
+    margin: 1rem;
 }
 .logo-img{
     width: 80%;
@@ -122,14 +132,13 @@ section{
     height: auto;
     padding: 0.3rem;
 }
-.spotlights, .spotlights ol {
-    list-style: none;
-    padding: 0;
+.spotlights{
+    height: auto;
+    padding: 1rem;
 }
-.spotlights ol li{
-    border: 1px solid #273043;
-    padding: 1rem 5rem 5rem 1rem;
-    margin: .3rem;
+.spotlights div{
+    border: 1px solid #273043;    
+    height: 14.7em;
 }
 a{
     color: #EFF6EE;

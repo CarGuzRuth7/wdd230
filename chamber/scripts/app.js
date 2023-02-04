@@ -4,6 +4,8 @@ function toggleMenu(){
     document.getElementById("hamburgerBtn").classList.toggle("open");
     document.querySelector("nav").classList.toggle("open");
 	document.querySelector(".spotlights").classList.toggle("open");
+	
+	
     
 }
 
@@ -54,3 +56,20 @@ const update = new Date(document.lastModified)
 
 document.getElementById("last-update").textContent = `Last Update: ${update.getMonth()+1}/${update.getDate()}/${update.getFullYear()}   ${update.getHours()}:${update.getMinutes()}:${update.getSeconds()}`;
 
+//Notification Banner
+if (dayName === "Monday"){
+	const banner = document.getElementById("welcome-banner");
+	banner.style.display = "block"
+
+	document.body.classList.toggle("move-down")
+	
+	const button = document.querySelector(".close-btn").addEventListener("click", ()=>{
+		banner.style.display = "none"
+		document.body.classList.remove("move-down")
+
+	});
+
+	
+	
+	 
+}

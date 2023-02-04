@@ -1,9 +1,38 @@
 *, h1{
     margin: 0;
 }
+.move-down{
+    margin-top: 3rem;
+
+}
 main{
     margin: 2rem auto;
     text-align: center;
+}
+
+#welcome-banner{
+    display: none;
+    background-color: #EFF6EE;
+    border:1px solid #DC493A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    z-index: 2;
+    text-align: center;
+}
+#welcome-banner div p{
+    margin: 0 1.3rem;
+} 
+.close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    color: #273043;
+    
 }
 body{
     font-family: 'Bitter', serif;
@@ -39,7 +68,7 @@ nav button{
     
     
 }
-nav button.open:hover{
+nav button.open:hover, .close-btn:hover{
     color:#DC493A
     
 }

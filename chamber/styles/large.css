@@ -88,4 +88,11 @@
     .spotlights div:nth-child(3){
         display: block;
     }
+    .spotlights, h4, h3, .hero button, section{
+        padding: .75rem;
+    }
+    hr{
+        margin: .75rem;
+    }
+    
 } /*end large */

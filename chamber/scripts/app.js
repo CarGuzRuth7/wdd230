@@ -68,8 +68,62 @@ if (dayName === "Monday"){
 		document.body.classList.remove("move-down")
 
 	});
-
-	
-	
 	 
 }
+
+//Lazy Loading
+const images = document.querySelectorAll("[data-src]");
+
+function preloadImage(img){
+  const src = img.getAttribute("data-src");
+  if(!src){
+    return;
+  }
+
+  img.src = src;
+  img.removeAttribute("data-src")
+}
+
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 50px 0px"
+};
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) =>{
+  entries.forEach(entry => {
+    if (!entry.isIntersecting){
+      return;
+    } else{
+      preloadImage(entry.target);
+      imgObserver.unobserve(entry.target);
+    }
+  })
+
+}, imgOptions);
+
+images.forEach(image => {
+  imgObserver.observe(image)
+})
+
+
+//Days of visits
+const visitsDisplay = document.querySelector("#visits");
+
+let currentDate = Date.now();
+
+let visitsNum = Number(window.localStorage.getItem("visits-lst"));
+let lastVisit = Number(window.localStorage.getItem("lastVisit"))
+localStorage.setItem("visits-lst", visitsNum)
+localStorage.setItem("lastVisit", currentDate)
+let days = Math.round((currentDate - lastVisit) / 84600000)
+
+if (visitsNum !== 0){
+	visitsDisplay.textContent = days;
+}else {
+	visitsDisplay.textContent = "🖐 This is your first time, Welcome!";
+};
+
+visitsNum = visitsNum +1
+
+
+

@@ -43,10 +43,10 @@
         gap: 1rem;
         margin:  1rem;
     }
-    section{
+    section, .discover figure{
         margin: 0;
     }
-    .hero{
+    .hero, .visits-display{
         grid-column: 1/9;
     }
     .news{
@@ -93,5 +93,24 @@
     .join button:hover{
         opacity: .9;
         transform: scale(1.1);
+    }
+
+    .discover figure{
+      grid-column: 4/9;
+    }
+    .demographic-data{
+      grid-column: 1/4;
+      grid-row: 2/4; 
+    }
+    .stocks{
+        grid-column: 1/4;
+        grid-row: 4/7;
+    }
+    
+    .discover figure img:hover{
+        transform: scale(0.9);
+        opacity:.8;
+        box-shadow: 0 0 15px #5C6479;
+        
     }
 } /*end medium */

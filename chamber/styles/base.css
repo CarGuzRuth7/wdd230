@@ -212,7 +212,7 @@ section{
     font-size: 1.2rem;
 }
 
-.spotlights div{
+.spotlights div, .stocks div{
     border: 1px solid #273043;    
     padding: 1.5rem;
     box-shadow: 0 0 8px #5C6479;
@@ -221,11 +221,34 @@ section{
 .spotlights div p, .spotlights div a{
     font-size: 80%;
 }
-.spotlights a, .event a{
+.spotlights a, .event a, .discover a{
     color: #DC493A;
     text-decoration: none;
 }
 a{
     color: #EFF6EE;
     text-decoration: none;
+}
+
+/*Discover page*/
+.discover figure{
+    display: block;
+    border: 1px solid #273043;
+    margin: 1rem;
+    padding: 0.45rem;
+    box-shadow: 0 0 8px #5C6479;
+    background-color: azure;
+
+}
+.discover figure img{
+    width: 90%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+.discover figure img[data-src]{
+    filter: blur(0.2em);
+
+}
+.visits-display{
+    padding: 2rem 0;
 }

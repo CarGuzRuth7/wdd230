@@ -112,9 +112,8 @@ const visitsDisplay = document.querySelector("#visits");
 let currentDate = Date.now();
 
 let visitsNum = Number(window.localStorage.getItem("visits-lst"));
-let lastVisit = Number(window.localStorage.getItem("lastVisit"))
-localStorage.setItem("visits-lst", visitsNum)
-localStorage.setItem("lastVisit", currentDate)
+let lastVisit = window.localStorage.getItem("lastVisit")
+
 let days = Math.round((currentDate - lastVisit) / 84600000)
 
 if (visitsNum !== 0){
@@ -125,5 +124,6 @@ if (visitsNum !== 0){
 
 visitsNum = visitsNum +1
 
-
+localStorage.setItem("visits-lst", visitsNum)
+localStorage.setItem("lastVisit", currentDate)
 

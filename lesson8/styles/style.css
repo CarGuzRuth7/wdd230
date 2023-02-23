@@ -1,0 +1,41 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+header, footer{
+    background-color: #22181c;
+    color: azure;
+    padding: .5rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+table{
+    border-collapse: collapse;
+    margin: 2rem auto;
+    background-color:azure;
+    box-shadow: 0 0 8px #5C6479;
+    
+}
+caption{
+    caption-side: bottom;
+    font-size: .8em;
+    padding: 10px;
+}
+tr, td, th{
+    border: 1px solid #ccc;
+    padding: .3rem 1.5rem;
+}
+
+tbody tr:nth-child(2){
+    background-color: #f6e8ea;
+}
+
+thead tr:first-child th, thead td:first-child, thead th{
+    background-color: #22181c;
+    color: azure;
+    font-size: 1.3em;
+}
+thead th{
+    background-color: #5a0001;
+
+}

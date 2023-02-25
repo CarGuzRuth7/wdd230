@@ -221,7 +221,7 @@ section{
 .spotlights div p, .spotlights div a{
     font-size: 80%;
 }
-.spotlights a, .event a, .discover a{
+.spotlights a, .event a, .discover a, .thankDiv a{
     color: #DC493A;
     text-decoration: none;
 }
@@ -279,7 +279,7 @@ label{
     padding: 0.75rem;
     background-color: #EFF6EE;
     color: #273043;
-    width: 80%;
+    width: 90%;
     font-size: 1rem;
 }
 .top input:required{
@@ -318,6 +318,14 @@ label{
 input[type="radio"]:checked{
    accent-color: #DC493A;
 }
-.membershipInfo{
-    display: none;
+.membershipInfo div, .thankDiv{
+    border: 1px solid #5C6479;
+    box-shadow: 0 0 8px #5C6479;
+    margin: 1rem;
+    padding: 1rem;
+}
+.thankDiv{
+    margin: 2rem;
+    padding: 5rem;
+    background-color: azure;
 }

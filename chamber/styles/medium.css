@@ -114,14 +114,24 @@
         
     }
 
-    .joinUs h2{
+    .joinUs h2, .thankDiv{
         grid-column: 1/9;
+        grid-row: 1/2;
     }
     .joinUs form{
         grid-column: 2/8;
+        grid-row: 2/3;
         margin: 0;
     }
     .sendBtn{
         width: 100%;    
+    }
+
+    .membershipInfo{
+        grid-column: 2/8;
+        grid-row:3/4;
+    }
+    textarea{
+        height: 120px;
     }
 } /*end medium */

@@ -252,3 +252,72 @@ a{
 .visits-display{
     padding: 2rem 0;
 }
+
+/*Join page*/
+.joinUs form{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+    background-color: azure;
+    border: 1px solid #5C6479;
+    box-shadow: 0 0 8px #5C6479;
+    
+}
+fieldset{
+    margin:2rem 0;
+    color: #273043;
+    border-radius: 5px;
+}
+label{
+    display: block;
+    margin: 1rem ;
+    font-size: .90rem;
+    color: #5C6479;
+}
+.top input, textarea{
+    display: block;
+    padding: 0.75rem;
+    background-color: #EFF6EE;
+    color: #273043;
+    width: 80%;
+    font-size: 1rem;
+}
+.top input:required{
+    border: 2px solid #DC493A;
+}
+.top input:required:valid{
+    border: 2px solid #60d394;
+}
+.sendBtn{
+    padding: .75rem ;
+    width: 80%;
+    background-color: #5C6479;
+    color: #EFF6EE;
+}
+.sendBtn:hover{
+    background-color: #DC493A;
+}
+.membershipLevel{
+    border: 1px solid #DC493A;
+    padding: .75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    color: #273043;
+    font-weight: bold;
+}
+
+.membershipLevel input{
+    height: 20px;
+    width: 20px;
+}
+.membershipLevel span + :checked {
+    color: #DC493A;
+}
+input[type="radio"]:checked{
+   accent-color: #DC493A;
+}
+.membershipInfo{
+    display: none;
+}

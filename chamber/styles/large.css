@@ -94,5 +94,17 @@
     hr{
         margin: .75rem;
     }
-   
+    
+    .joinUs form{
+        grid-column: 1/5;
+    }
+    .membershipInfo{
+        display: block;
+        grid-column: 5/9;
+    }
+    .membershipInfo div{
+        border: 1px solid #5C6479;
+        box-shadow: 0 0 8px #5C6479;
+        margin: 1rem;
+    }
 } /*end large */

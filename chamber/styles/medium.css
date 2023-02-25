@@ -113,4 +113,15 @@
         box-shadow: 0 0 15px #5C6479;
         
     }
+
+    .joinUs h2{
+        grid-column: 1/9;
+    }
+    .joinUs form{
+        grid-column: 2/8;
+        margin: 0;
+    }
+    .sendBtn{
+        width: 100%;    
+    }
 } /*end medium */

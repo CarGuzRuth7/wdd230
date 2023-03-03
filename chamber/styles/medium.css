@@ -46,10 +46,10 @@
     section, .discover figure{
         margin: 0;
     }
-    .hero, .visits-display{
+    .hero, .visits-display, .directory div.gridListBtn{
         grid-column: 1/9;
     }
-    .news{
+    .news, .companies{
         grid-column: 1/9;
         grid-row: 2/3;
     }
@@ -133,5 +133,10 @@
     }
     textarea{
         height: 120px;
+    }
+
+    .list div{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
     }
 } /*end medium */

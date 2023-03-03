@@ -1,0 +1,121 @@
+{
+    "companies": [
+        {
+            "name" : "ALTER S.A.I.C.",
+            "address" : "Av. Mitre 50, Berazategui, Buenos Aires, B1880EEN",
+            "phonenumber" : "+54 (011) 4256-7176",
+            "websiteurl" : "http://www.altersaic.com",
+            "email" : "degiusti@altersaic.com",
+            "logoimg" : "https://storage.waw.cloud.ovh.net/v1/AUTH_02146b5bb0b44ac3ad793ccbbd2ec1d0/files/noticias/Alter.JPG",
+            "membershiplevel" : "non profit"
+        },
+        {
+            "name" : "ARCHROMA ARGENTINA S.A.",
+            "address" : "Av. José Garibaldi 2401, Lomas de Zamora, Buenos Aires, B1832KFW",
+            "phonenumber" : "+54 (011) 5219-7700",
+            "websiteurl" : "http://www.archroma.com",
+            "email" : "rafael.romero@archroma.com",
+            "logoimg" : "https://storage.waw.cloud.ovh.net/v1/AUTH_02146b5bb0b44ac3ad793ccbbd2ec1d0/files/ld_images/_Archroma.png",
+            "membershiplevel" : "bronze"
+        },
+        {
+            "name" : "BEKAERT TEXTILES ARGENTINA S.A.",
+            "address" : "Junin 1080, Burzaco, Buenos Aires, B1852DXL",
+            "phonenumber" : "+54 (011) 4238-3165",
+            "websiteurl" : "http://www.bekaertdeslee.com",
+            "email" : "javier.pifarre@bekaertdeslee.com",
+            "logoimg" : "https://storage.waw.cloud.ovh.net/v1/AUTH_02146b5bb0b44ac3ad793ccbbd2ec1d0/files/noticias/Bekaertdeslee_pie.JPG",
+            "membershiplevel" : "bronze"
+        },
+        {
+            "name" : "Centro Cristales",
+            "address" : "Av. H. Yrigoyen 12771, Adrogué, Buenos Aires, C1426BOI",
+            "phonenumber" : "+54 (011) 4293-4300",
+            "websiteurl" : "https://www.centrocristales.com.ar/",
+            "email" : "presupuestos@centrocristales.co",
+            "logoimg" : "https://www.centrocristales.com.ar/img/logo2.png",
+            "membershiplevel" : "silver"
+        },
+        {
+            "name" : "Colourchem ARG SRL",
+            "address" : "Dr. Cosme Argerich 2555, Munro., Munro, Buenos Aires, 1650",
+            "phonenumber" : "+54 (011) 4730-4046",
+            "websiteurl" : null,
+            "email" : "info@colourchem.com.ar",
+            "logoimg" : "https://storage.waw.cloud.ovh.net/v1/AUTH_02146b5bb0b44ac3ad793ccbbd2ec1d0/files/noticias/logo_colourchem.png",
+            "membershiplevel" : "non profit"
+        },
+        {
+            "name" : "DIETEX S.A.",
+            "address" : "Av. 64 (J.D. Perón) 5465, General San Martín, Buenos Aires, B1650JJA",
+            "phonenumber" : "+54 (011) 4753-3600",
+            "websiteurl" : null,
+            "email" : "dietex@dietex.com.ar",
+            "logoimg" : "https://storage.waw.cloud.ovh.net/v1/AUTH_02146b5bb0b44ac3ad793ccbbd2ec1d0/files/noticias/Dietex1_UWxEtmk.jpg",
+            "membershiplevel" : "bronze"
+        },
+        {
+            "name" : "FIBRALTEX S.A.",
+            "address" : "Av. Eduardo Comesaña 3949, Ciudadela, Buenos Aires, B1702BNU",
+            "phonenumber" : "+54 (011) 4488-2177",
+            "websiteurl" : "www.fibraltex.com.ar",
+            "email" : "grossom@fibraltex.com.ar",
+            "logoimg" : "https://storage.waw.cloud.ovh.net/v1/AUTH_02146b5bb0b44ac3ad793ccbbd2ec1d0/files/ld_images/_Fibratex.jpg",
+            "membershiplevel" : "gold"
+        },
+        {
+            "name" : "GEOTEX S.R.L.",
+            "address" : "Calle 52 - 1757, Guillermo Hudson, Buenos Aires, B1885CQA",
+            "phonenumber" : "+54 (011) 5238-0373",
+            "websiteurl" : "http://www.geotex.com.ar",
+            "email" : "administracion.ventas@geotex.com.ar",
+            "logoimg" : "https://storage.waw.cloud.ovh.net/v1/AUTH_02146b5bb0b44ac3ad793ccbbd2ec1d0/files/noticias/Geotex.png",
+            "membershiplevel" : "gold"
+        },
+        {
+            "name" : "MANUFACTURA DE FIBRAS SINTÉTICAS S.A.",
+            "address" : "Esmeralda 130. Piso 15, Ciudad Autónoma de Buenos Aires, C1035ABD",
+            "phonenumber" : "+54 (011) 4394-2030",
+            "websiteurl" : "www.mafissa.com.ar",
+            "email" : "email@mafissa.com.ar",
+            "logoimg" : "https://storage.waw.cloud.ovh.net/v1/AUTH_02146b5bb0b44ac3ad793ccbbd2ec1d0/files/ld_images/_logo.jpg",
+            "membershiplevel" : "bronze"
+        },
+        {
+            "name" : "MEGATOOLS",
+            "address" : "García de Cossio 7441, Buenos Aires",
+            "phonenumber" : "+54 (011) 4642-7040",
+            "websiteurl" : "http://www.megatools.com.ar/",
+            "email" : null,
+            "logoimg" : "http://www.megatools.com.ar/wp-content/uploads/2020/07/logo.jpg",
+            "membershiplevel" : "silver"
+        },
+        {
+            "name" : "Sertec Argentina",
+            "address" : "Av. M. Castex 1070, Canning, Buenos Aires",
+            "phonenumber" : "+54 (011) 4295-3300",
+            "websiteurl" : "www.sertecargentina.com.ar ",
+            "email" : "info@sertecargentina.com.ar",
+            "logoimg" : "https://www.guiastodo.com.ar/minisitios/001482/logo.png",
+            "membershiplevel" : "non profit"
+        },
+        {
+            "name" : "SPD Soluciones - Accesorios para la Industria",
+            "address" : "Monte Grande, Buenos Aires",
+            "phonenumber" : "+54 (011) 4296-0737",
+            "websiteurl" : "https://www.spdsolucion.com/#Home",
+            "email" : "contacto@spdsolucion.com",
+            "logoimg" : "https://www.guiastodo.com.ar/minisitios/001479/logo.png",
+            "membershiplevel" : "non profit"
+        },
+        {
+            "name" : "Tuluka Fitness Club",
+            "address" : "Leandro N. Alem 840, B1842ASQ Monte Grande, Provincia de Buenos Aires",
+            "phonenumber" : "+54 (011) 4281-7600",
+            "websiteurl" : "http://www.tulukafitness.com/",
+            "email" : "montegrande@tulukafitness.com",
+            "logoimg" : "https://www.tulukafitness.com/images/logo.svg?v=3",
+            "membershiplevel" : "gold"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+    <html lang="en">
+        <head> 
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Echeveria Chamber of Commerce directory Page">
+            <link href="styles/normalize.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">            
+            <link rel="icon" href="favicon.ico">
+            <link rel="stylesheet" href="styles/base.css">
+            <link rel="stylesheet" href="styles/medium.css">
+            <link rel="stylesheet" href="styles/large.css">
+            <title>Directory - Echeveria Chamber of Commerce</title>
+        </head>
+        <body>
+            <header>
+                <div class="main-header">
+                    <nav>
+                        <button id="hamburgerBtn"> 
+                            <span>&#9776;</span> 
+                            <span>X</span> 
+                        </button>
+                        <ul id="primaryNav">
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="#">Directory</a></li>
+                            <li><a href="join.html">Join</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+
+                        <a href="index.html"><img class="logo-img" src="images/logo.webp" alt="logo"></a>
+                        <div class="headings">
+                            <h1>Echeveria </h1>
+                            <h5>Chamber of Commerce</h5>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedin icon"></a>
+                    </div>
+                    
+                </div>
+                <span id="date"></span>
+            </header>
+            <main class="directory">
+                <div id="welcome-banner">
+                    <div>
+                        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+                        <button class="close-btn">x</button>
+                    </div>
+                    
+                </div>
+                <div class="gridListBtn">
+                    <button id="grid"><img src="images/icons8-health-data-30.png" alt="Health Data icon by Icons8 https://img.icons8.com/ios-glyphs/256/health-data.png" loading="lazy"></button>
+                    <button id="list"><img src="images/icons8-bullet-list-30.png" alt="Bullet List icon by Icons8 https://img.icons8.com/ios-glyphs/256/overview-pages-3.png" loading="lazy"></button>
+                </div>
+               <div class="companies grid"></div>
+               
+            </main>
+            <footer>
+                
+                <img class="logo-img footer-img" src="images/logo3.webp" alt="logo">
+                
+                <h3>Buenos Aires, Argentina</h3>
+                
+                
+                <div class="contact-info">    
+                    <br>
+                    <a href="#">📧 info@echeveriacc.org</a><br><br>
+                    <a href="#">📞 +54 0800-5555</a><br><br>
+                    <a href="https://www.google.com/maps/place/Buenos+Aires/@-34.6156222,-58.7035814,11z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3d05457fbb:0xe160f4fce7f7c017!8m2!3d-34.6143048!4d-58.4401655" target="_blank">📌Location Map</a>
+                </div>
+
+                <div class="copyright">
+                    <hr>
+                    &copy; <span id="year"></span> Echeveria Chamber | <b>Ruth Cardona</b> | WDD 230 Project |
+                    <span id="last-update"></span>
+                </div>
+            </footer>
+            <script src="scripts/directory.js"></script>
+            <script src="scripts/app.js"></script>
+        </body>
+    </html>

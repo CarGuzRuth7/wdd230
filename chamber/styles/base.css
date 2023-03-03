@@ -64,9 +64,7 @@ nav button{
     font-size: 2rem;
     color: #EFF6EE;
     border: none;
-    
-    
-    
+ 
 }
 nav button.open:hover, .close-btn:hover{
     color:#DC493A
@@ -122,7 +120,7 @@ nav ul li a:hover{
 #hamburgerBtn span:nth-child(2), 
 #hamburgerBtn.open span:nth-child(1),
 .spotlights div:nth-child(3), 
-.join {
+.join, .list img{
     display: none;
 
 }
@@ -153,7 +151,6 @@ hr{
     flex-direction: column;
     
 }
-
 #date{
     margin: 2rem 0;
     padding: 0.5rem;
@@ -221,17 +218,16 @@ section{
 .spotlights div p, .spotlights div a{
     font-size: 80%;
 }
-.spotlights a, .event a, .discover a, .thankDiv a{
+a, .spotlights a, .event a, .discover a, .thankDiv a, .companies a{
     color: #DC493A;
     text-decoration: none;
 }
 a{
     color: #EFF6EE;
-    text-decoration: none;
 }
 
 /*Discover page*/
-.discover figure{
+.discover figure, .companies div,.grid div{
     display: block;
     border: 1px solid #273043;
     margin: 1rem;
@@ -254,7 +250,7 @@ a{
 }
 
 /*Join page*/
-.joinUs form{
+.joinUs form, .list div{
     margin: 1rem;
     padding: 1rem;
     text-align: left;
@@ -294,7 +290,7 @@ label{
     background-color: #5C6479;
     color: #EFF6EE;
 }
-.sendBtn:hover{
+.sendBtn:hover, .directory div button:hover{
     background-color: #DC493A;
 }
 .membershipLevel{
@@ -328,4 +324,23 @@ input[type="radio"]:checked{
     margin: 2rem;
     padding: 5rem;
     background-color: azure;
+}
+/*Directory*/
+.companies div p, .companies h4, .list div a{
+    padding: .4rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.list div{
+    margin: 0;
+    box-shadow: none;
+    
+}
+.list div:nth-child(even){
+    background-color: #e7eaf2;
+}
+.directory div button{
+    margin: .5rem;
 }

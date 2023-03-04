@@ -108,7 +108,7 @@ images.forEach(image => {
 //Get the date and time when the form was send
 const inputDate = document.getElementById("formDateSend");
 const sendBtn = document.querySelector(".sendBtn");
-
+if(sendBtn){
 sendBtn.addEventListener("click", ()=>{
 	inputDate.value = date
-})
+})}

@@ -1,0 +1,22 @@
+*{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    max-width: 800px;
+    margin: .3rem auto;
+}
+header, footer{
+    background-image: linear-gradient(#450920, #ffa5ab);
+    padding: 1rem;
+    color: aliceblue;
+    
+}
+main{
+    border: 1px solid #450920;
+    box-shadow: 0 0 10px #ffa5ab;
+    margin: 4rem auto;
+    max-width: 500px;
+    padding: 1.5rem; 
+    line-height: 2rem;
+    font-size: 1.2rem;
+    
+}

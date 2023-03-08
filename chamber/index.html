@@ -24,10 +24,11 @@
                             <span>X</span> 
                         </button>
                         <ul id="primaryNav">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="discover.html">Discover</a></li>
-                            <li><a href="#">Directory</a></li>
+                            <li><a href="directory.html">Directory</a></li>
                             <li><a href="join.html">Join</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="logo">
@@ -78,15 +79,15 @@
                 <section class="weather">
                     <h3>Weather</h3>
                     <div>
-                        <div class="weather-icon">
-                            <img src="images/icons8-lluvia-96.png" alt="Lluvia icon by Icons8">
-                            <h2><span id="temperature">33</span>°F</h2>
+                        <div class="weather-temp">
+                            <img src="" alt="" id="weather-icon" width="100">
+                            <h2><span id="temperature"></span>°C</h2>
                         </div>
-                        <h4>Light Rain</h4>
+                        <h4 class="description"></h4>
                         <hr>
                         <!-- <p>☔ Precipitation: 58%</p>
                         <p>💧 Humidity: 83%</p> -->
-                        <p>🍃 Wind Speed: <span id="wind-speed">2.5</span>mph</p>
+                        <p>🍃 Wind Speed: <span id="wind-speed"></span>m/s</p>
                         <p>🧊 Wind Chill: <span class="wind-chill"></span></p>
                     </div>
                 </section>
@@ -151,6 +152,6 @@
                 </div>
             </footer>
             <script src="scripts/app.js"></script>
-            <script src="scripts/windchill.js"></script>
+            <script src="scripts/weather.js"></script>
         </body>
     </html>

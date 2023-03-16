@@ -120,7 +120,7 @@ nav ul li a:hover{
 #hamburgerBtn span:nth-child(2), 
 #hamburgerBtn.open span:nth-child(1),
 .spotlights div:nth-child(3), 
-.join, .list img{
+.join, .list img, .img-contact{
     display: none;
 
 }
@@ -218,7 +218,7 @@ section{
 .spotlights div p, .spotlights div a{
     font-size: 80%;
 }
-a, .spotlights a, .event a, .discover a, .thankDiv a, .companies a{
+a, .spotlights a, .event a, .discover a, .thankDiv a, .companies a, .contactUs a{
     color: #DC493A;
     text-decoration: none;
 }
@@ -250,7 +250,7 @@ a{
 }
 
 /*Join page*/
-.joinUs form, .list div{
+.joinUs form, .list div, .contactUs form{
     margin: 1rem;
     padding: 1rem;
     text-align: left;
@@ -277,6 +277,7 @@ label{
     color: #273043;
     width: 90%;
     font-size: 1rem;
+    outline: none;
 }
 .top input:required{
     border: 2px solid #DC493A;

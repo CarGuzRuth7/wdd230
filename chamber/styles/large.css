@@ -95,11 +95,11 @@
         margin: .75rem;
     }
     
-    .joinUs form{
+    .joinUs form, .contactUs section{
         grid-column: 1/5;
         grid-row: 2/3;
     }
-    .membershipInfo{
+    .membershipInfo, .contactUs form{
         grid-column: 5/9;
         grid-row: 2/3;
     }
@@ -108,5 +108,12 @@
     }
     .top input, .membershipLevel{
         padding: .45rem;
+    }
+    .img-contact{
+        display: block;
+        width: 70%;
+        margin: .45rem auto;
+        border: 1px solid #273043; 
+        box-shadow: 0 0 8px #5C6479; 
     }
 } /*end large */

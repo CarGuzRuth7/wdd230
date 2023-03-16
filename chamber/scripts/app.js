@@ -112,3 +112,8 @@ if(sendBtn){
 sendBtn.addEventListener("click", ()=>{
 	inputDate.value = date
 })}
+
+const mssgBtn = document.querySelector(".sendMsg");
+if(mssgBtn){
+	mssgBtn.addEventListener("click", ()=>{alert("Message Send")})
+}

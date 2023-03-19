@@ -1,9 +1,15 @@
 const getDirectory = async() =>{
-    const response = await fetch("json/data.json");
-    if (response.ok){
-    const data = await response.json();
-    console.log(data.companies)
-    displayCompanies(data.companies);
+    try{
+        const response = await fetch("json/data.json");
+        if (response.ok){
+            const data = await response.json();
+
+            displayCompanies(data.companies);
+        } else {
+            throw Error(await response.text());
+        }
+    }catch(error) {
+        console.log(error);
     }
 }
 getDirectory();

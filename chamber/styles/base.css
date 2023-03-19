@@ -1,4 +1,4 @@
-*, h1{
+*, h1, nav ul{
     margin: 0;
 }
 .move-down{
@@ -9,9 +9,7 @@ main{
     margin: 2rem auto;
     text-align: center;
 }
-
 #welcome-banner{
-    display: none;
     background-color: #EFF6EE;
     border:1px solid #DC493A;
     position: fixed;
@@ -32,7 +30,7 @@ main{
     border: none;
     background-color: transparent;
     color: #273043;
-    
+
 }
 body{
     font-family: 'Bitter', serif;
@@ -67,14 +65,12 @@ nav button{
  
 }
 nav button.open:hover, .close-btn:hover{
-    color:#DC493A
+    color:#DC493A;
     
 }
 nav ul{
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: none;
     
 }
 header div nav.open{
@@ -92,12 +88,7 @@ header div nav.open{
     z-index: 1;
     
 }
-nav ul.open{
-    display: block;
-    
-}
 nav ul li a{
-    display: block;
     padding: 1rem ;
     text-decoration: none;
     color: #EFF6EE;
@@ -113,14 +104,27 @@ nav ul li a:hover{
 }
 
 #hamburgerBtn span:nth-child(1), 
-#hamburgerBtn.open span:nth-child(2) {
+#hamburgerBtn.open span:nth-child(2),
+nav ul.open,
+nav ul li a,
+#date,
+.discover figure, 
+.companies div,
+.grid div, 
+.top input,
+textarea,
+label {
     display: block;
 
 }
 #hamburgerBtn span:nth-child(2), 
 #hamburgerBtn.open span:nth-child(1),
 .spotlights div:nth-child(3), 
-.join, .list img, .img-contact{
+#welcome-banner,
+nav ul,
+.join, 
+.list img, 
+.img-contact{
     display: none;
 
 }
@@ -155,7 +159,6 @@ hr{
     margin: 2rem 0;
     padding: 0.5rem;
     background-color: #5C6479;
-    display: block;
     font-family: "Bitter", sans-serif;
 }
 .social-media img{
@@ -228,7 +231,6 @@ a{
 
 /*Discover page*/
 .discover figure, .companies div,.grid div{
-    display: block;
     border: 1px solid #273043;
     margin: 1rem;
     padding: 0.45rem;
@@ -265,13 +267,11 @@ fieldset{
     border-radius: 5px;
 }
 label{
-    display: block;
     margin: 1rem ;
     font-size: .90rem;
     color: #5C6479;
 }
 .top input, textarea{
-    display: block;
     padding: 0.75rem;
     background-color: #EFF6EE;
     color: #273043;

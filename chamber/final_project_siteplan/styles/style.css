@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #39375B;
+    --secondary-color: #34E5FF;
+    --accent1-color: #FFFFFF;
+    --accent2-color: #D30C7B;
+    --heading-font: Kanit, "Times News Roman";
+    --paragraph-font: Nunito, "Open Sans";
+    --headline-color-on-white: #39375B;
+    --headline-color-on-color: #34E5FF;
+    --paragraph-color-on-white: #39375B;
+    --paragraph-color-on-color: #FFFFFF;
+    --paragraph-background-color: #39375B;
+    --nav-link-color: #39375B;
+    --nav-background-color: #34E5FF;
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #D30C7B;
+}
+*{
+    text-align: center;
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
+header,footer, h1, h2, h3, h4{
+    font-family: var(--heading-font);
+
+}
+main, h2, h3, h4{
+    margin: 1rem;
+    color: var(--headline-color-on-white);
+}
+nav ul{
+    list-style: none;
+    
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--nav-link-color);
+    border: 1px solid var(--primary-color);
+    padding: .5rem;
+    
+}
+nav ul li a:hover{
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+a{
+    color: var(--accent2-color);
+}
+p{
+    color: #000;
+}
+td{
+    border: 1px solid #273043;
+    padding: 1rem;
+}
+table{
+    width: 100%;
+}
+th{
+    border: 1px solid #273043;
+    background-color: #fff;
+}
+.primary{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+.secondary{
+    background-color: var(--secondary-color);
+    
+}
+.accent2{
+    background-color: var(--accent2-color);
+    color: #EFF6EE;
+}

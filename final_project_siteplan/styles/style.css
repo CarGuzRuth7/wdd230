@@ -43,7 +43,7 @@ nav ul li a{
     display: block;
     text-decoration: none;
     color: var(--nav-link-color);
-    border: 1px solid var(--primary-color);
+    
     padding: .5rem;
     
 }

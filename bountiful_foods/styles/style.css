@@ -1,0 +1,95 @@
+*{
+    text-align: center;
+    font-family: Nunito, "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    background-color: #39375B;
+    color:#34E5FF;
+    
+}
+header,footer, h1, h2, h3, h4{
+    font-family: Kanit, "Times News Roman";
+
+}
+#logo{
+    width: 150px;
+    border-radius: 10px;
+    
+}
+/*Navigation*/
+nav{
+    background-color:#34E5FF;
+}
+nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #39375B;
+    
+    padding: .5rem;
+    background: linear-gradient(50deg, transparent, #D30C7B, transparent) center/
+		var(--d, 0) 50px no-repeat;
+	transition: 0.5s;
+    
+}
+nav ul li a:hover{
+    --d: 90%;
+    color: #FFF;
+}
+nav button{
+    margin: .2rem ;
+    background: transparent;
+    font-size: 2rem;
+    border: none;
+ 
+}
+header div nav.open{
+    
+    height: auto;
+    margin: 0;
+    
+}
+/*Display blocks/none*/
+#hamburgerBtn span:nth-child(2), 
+#hamburgerBtn.open span:nth-child(1),
+nav ul,
+.fresh-img{
+    display: none;
+}
+#hamburgerBtn span:nth-child(1), 
+#hamburgerBtn.open span:nth-child(2),
+nav ul.open,
+nav ul li a{
+    display: block;
+}
+/*Main Content*/
+/*HOME*/
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.hero picture{
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.hero div{
+    grid-column:1/4;
+    grid-row: 2/3;
+    font-size: 1.5em;
+    color:#FFF;
+    z-index: 1;
+
+
+}
+
+.img-banner{
+    width: 100%;
+    opacity: .9;
+}

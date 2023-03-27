@@ -44,48 +44,60 @@
                     </picture>
                     
                 </div>
-                <div>
+                <section>
                     <h3>Refresh Yourself</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                         Doloremque tenetur sequi dicta non cum quos, temporibus
-                          magnam quia voluptatem at fugiat neque placeat, error
-                           mollitia repudiandae perferendis ex distinctio tempore!</p>
+                    <p>Now you can prepare your own drink and we'll bring it to you!<br>
+                        You can choose our variety of fresh fruits and organic juices 
+                        that you like the most.</p>
                     <a href="fresh.html" class="redirection">Prepare Your Drink</a>
                     <img src="images/tangerine-newt-hINQgaTqg7Q-unsplash.webp" alt="Tangerine Newt from Unsplash" class="fresh-img">
-                </div>
-                <div class="weather-div">
-                    <img src="images/samantha-jean-JzxUXm7GFGk-unsplash.webp" alt="Samantha Jean from Unsplash">
+                </section>
+                <section class="weather-div">
+                    <img class="weather-img" src="images/samantha-jean-JzxUXm7GFGk-unsplash.webp" alt="Samantha Jean from Unsplash">
                     <h3>Weather</h3>
-                    <div>
+                    <div class="weather-info">
                         <div class="weather-temp">
                             <img src="." alt="." id="weather-icon" width="100">
-                            <h2><span id="temperature"></span>°F</h2>
+                            <h2><span id="temperature"></span> °F</h2>
                         </div>
                         <h4 class="description">.</h4>
-                        <hr>
-                        <!-- <p>☔ Precipitation: 58%</p>
-                        <p>💧 Humidity: 83%</p> -->
+                        <p>Humidity: <span class="humidity"></span></p>
+
+                        <h4>Three Days Forecast</h4>
+                        <div class="three-days">
+                        
+                            <div class="tomorrow">
+
+                            </div>
+                            <div class="day-2">
+
+                            </div>
+                            <div class="day-3">
+
+                            </div>
+
+                        </div>
                         
                     </div>
 
-                </div>
+                </section>
                 <div class="icon">
                     <img src="images/icons8-camión-50.png" alt="Camión from icons8"><p>Shipping and withdrawals from our premises</p>
                     <img src="images/icons8-camión-de-comida-64.png" alt="Camión de comida from icons8"><p>Made to order from our food trucks in coastal areas</p>
                 </div>
-                <div class="news">
+                <section class="news">
                     <h3>News</h3>
-                </div>
-                <div class="total-drinks">
+                </section>
+                <section class="total-drinks">
                     Total Drinks You Prepared
                     <div class="local-storage"></div>
 
-                </div>
-                <div class="questions">
+                </section>
+                <section class="questions">
                     <h3>Questions?</h3>
                     <a href="aboutus.html">Contact Us</a>
 
-                </div>
+                </section>
                 
             </main>
             <footer>
@@ -105,6 +117,7 @@
                 <br><span id="last-update"></span>
             </footer>
             <script src="scripts/app.js"></script>
+            <script src="scripts/weather.js"></script>
             
         </body>
     </html>

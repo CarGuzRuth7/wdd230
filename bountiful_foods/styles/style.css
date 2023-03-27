@@ -59,7 +59,8 @@ header div nav.open{
 #hamburgerBtn span:nth-child(2), 
 #hamburgerBtn.open span:nth-child(1),
 nav ul,
-.fresh-img{
+.fresh-img,
+.weather-img{
     display: none;
 }
 #hamburgerBtn span:nth-child(1), 
@@ -69,6 +70,9 @@ nav ul li a{
     display: block;
 }
 /*Main Content*/
+/* main{
+    background-color: #34E5FF;
+} */
 /*HOME*/
 .hero{
     display: grid;
@@ -92,4 +96,23 @@ nav ul li a{
 .img-banner{
     width: 100%;
     opacity: .9;
+}
+section, .icon{
+    padding: .5rem;
+    margin: .5rem;
+    border: 1px solid #39375B;
+    box-shadow: 0 0 10px 1px #39375B;
+    border-radius: 10px;
+}
+.total-drinks{
+    background-color: #34E5FF;
+}
+.three-days{
+    display: flex;
+    justify-content: space-around;
+}
+.three-days div{
+    margin: .3rem;
+    padding: .3rem;
+    border: 1px solid #39375B;
 }

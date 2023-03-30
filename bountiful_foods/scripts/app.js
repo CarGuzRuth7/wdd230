@@ -3,6 +3,11 @@ const update = new Date(document.lastModified)
 
 document.getElementById("last-update").textContent = `Last Update: ${update.getMonth()+1}/${update.getDate()}/${update.getFullYear()}   ${update.getHours()}:${update.getMinutes()}:${update.getSeconds()}`;
 
+//Get the current year
+const date = new Date();
+const currentYear = date.getFullYear();
+document.getElementById("date").textContent = currentYear;
+
 //Menu icon
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("open");
@@ -13,3 +18,87 @@ function toggleMenu(){
 
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
+
+//Progressive Loading
+const images = document.querySelectorAll("[data-src]");
+
+function preloadImage(img){
+  const src = img.getAttribute("data-src");
+  if(!src){
+    return;
+  }
+
+  img.src = src;
+  img.removeAttribute("data-src")
+};
+
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 50px 0px"
+};
+
+const imgObserver = new IntersectionObserver( (entries, imgObserver) => {
+  entries.forEach(entry => {
+                    if (!entry.isIntersecting){
+                      return;
+                    } else{
+                      preloadImage(entry.target);
+                      imgObserver.unobserve(entry.target);
+                    }
+  });
+
+}, imgOptions);
+
+images.forEach(image => { imgObserver.observe(image) });
+
+// //Slideshow animation
+// let slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+  
+//   let slides = document.getElementsByClassName("mySlides");
+
+//   for (let i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+
+//   if (slideIndex > slides.length) {slideIndex = 1}
+//   slides[slideIndex-1].style.display = "block";
+
+//   setTimeout(showSlides, 5000); // Change image every 5 seconds
+// } 
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 

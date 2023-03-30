@@ -40,6 +40,7 @@ function displayResults(weatherData){
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute("loading", "lazy")
     captionDesc.textContent = desc.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
     humidity.textContent = weatherHum;
     }
@@ -50,7 +51,7 @@ function displayResults(weatherData){
         const daythree = weatherData.list[22];        
 
         day1.innerHTML = `<h5>Tomorrow</h5>
-                        <img src="${`https://openweathermap.org/img/w/${dayone.weather[0].icon}.png`}" alt="${dayone.weather[0].description}">
+                        <img src="${`https://openweathermap.org/img/w/${dayone.weather[0].icon}.png`}" alt="${dayone.weather[0].description}" loading="lazy">
                         <p><span>${dayone.weather[0].description
                             .split(" ")
                             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
@@ -58,7 +59,7 @@ function displayResults(weatherData){
                         <p><b>Max Temp</b>: <span>${dayone.main.temp_max.toFixed(0)}</span> °F</p>`;
 
         day2.innerHTML = `<h5>2 Days</h5>
-                        <img src="${`https://openweathermap.org/img/w/${daytwo.weather[0].icon}.png`}" alt="${daytwo.weather[0].description}">
+                        <img src="${`https://openweathermap.org/img/w/${daytwo.weather[0].icon}.png`}" alt="${daytwo.weather[0].description}" loading="lazy">
                         <p><span>${daytwo.weather[0].description
                             .split(" ")
                             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
@@ -66,7 +67,7 @@ function displayResults(weatherData){
                         <p><b>Max Temp</b>: <span>${daytwo.main.temp_max.toFixed(0)}</span> °F</p>`;
 
         day3.innerHTML = `<h5>3 Days</h5>
-                        <img src="${`https://openweathermap.org/img/w/${daythree.weather[0].icon}.png`}" alt="${daythree.weather[0].description}">
+                        <img src="${`https://openweathermap.org/img/w/${daythree.weather[0].icon}.png`}" alt="${daythree.weather[0].description}" loading="lazy">
                         <p><span>${daythree.weather[0].description
                             .split(" ")
                             .map(word => word.charAt(0).toUpperCase() + word.slice(1))

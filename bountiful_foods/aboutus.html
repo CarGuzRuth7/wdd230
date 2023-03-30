@@ -14,22 +14,22 @@
         </head>
         <body>
             <header>
-                <img src="images/bountiful-foods-logo.jpg" alt="bountiful foods logo" id="logo">
-                <h1>Bountiful Foods</h1>
-                
                 <div>
-                    <nav>
-                        <button id="hamburgerBtn"> 
-                            <span>&#9776;</span> 
-                            <span>X</span> 
-                        </button>
-                        <ul id="primaryNav">
-                            <li><a href="index.html">🍇 Home</a></li>
-                            <li><a href="fresh.html">🍇 Fresh</a></li>
-                            <li><a href="aboutus.html">🍇 About Us</a></li>
-                        </ul>
-                    </nav>
+                    <a href="index.html"><img src="images/bountiful-foods-logo.jpg" alt="bountiful foods logo" id="logo" loading="lazy"></a>
+                    <h1>Bountiful Foods</h1>
+                    
+                    <button id="hamburgerBtn"> 
+                        <span>&#9776;</span> 
+                        <span>X</span> 
+                    </button>
                 </div>
+                <nav>    
+                    <ul id="primaryNav">
+                        <li><a href="index.html">🍇 Home</a></li>
+                        <li><a href="fresh.html">🍇 Fresh</a></li>
+                        <li><a href="aboutus.html">🍇 About Us</a></li>
+                    </ul>
+                </nav>
             </header>
             <main class="aboutus">
                 <div>
@@ -84,20 +84,28 @@
                 
             </main>
             <footer>
-                <div>
+                <div class="address">
                     <p>Address 111, Carlsbad, California, US</p>
-                    <a href="#">+1 222 5555</a>
-                    <a href="#">bountifulfoods@domail.com</a>
+                    <p href="#">+1 222 5555</p>
+                    <a href="#">bountifulfoods@domail.com</a>                
                 </div>
-                <div class="info-link">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook-nuevo-96.png" alt="facebook icon from icons8"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="images/icons8-instagram-96.png" alt="instagram icon from icons8"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="images/icons8-twitter-circled-96.png" alt="twitter icon from icons8"></a>
-                    <a href="aboutus.html">About Us</a>
+                <div class="inside-link">
+                    <a href="aboutus.html">About Us</a> <br>
                     <a href="references.html" target="_blank">References</a>
                 </div>
-                &copy; <span id="date"></span> | Ruth Cardona | Argentina
-                <br><span id="last-update"></span>
+                
+                <div class="social-link">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook-nuevo-96.png" alt="facebook icon from icons8"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/icons8-instagram-96.png" alt="instagram icon from icons8"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/icons8-twitter-circled-96.png" alt="twitter icon from icons8"></a><br>
+                    
+                </div>
+                
+                <div class="footer-end">
+                <p> --------------------------------------------------------</p><br>
+                <h5>Bountiful Foods &copy; <span id="date"></span> | Ruth Cardona | Argentina</h5>
+                <span id="last-update"></span>
+                </div>
             </footer>
             <script src="scripts/app.js"></script>
             

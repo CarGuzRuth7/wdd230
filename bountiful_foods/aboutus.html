@@ -5,6 +5,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="Bountiful Foods about us page for wdd230 final project">
+            <link rel="stylesheet" href="styles/normalize.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Nunito&display=swap" rel="stylesheet">
@@ -30,25 +31,39 @@
                         <li><a href="aboutus.html">🍇 About Us</a></li>
                     </ul>
                 </nav>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook-nuevo-96.png" alt="facebook icon from icons8"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/icons8-instagram-96.png" alt="instagram icon from icons8"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/icons8-twitter-circled-96.png" alt="twitter icon from icons8"></a><br>
+                </div> 
             </header>
             <main class="aboutus">
-                <div>
+                <section class="owner">
                     <h3>Who We Are?</h3>
-                    <img src="images/nathan-anderson-GM5Yn5XRVqA-unsplash.webp" alt="Nathan Anderson from Unsplash">
-                    <p>Bountiful Foods is a small organic food business creater on 1999 by Caroline Johnson. Caroline </p>
-                </div>
-                <div>
+                    <picture>
+                        <source media="(max-width: 704px)" srcset="images/nathan-anderson-GM5Yn5XRVqA-unsplash-small.jpg">
+                        <source media="(max-width: 1024px)" srcset="images/nathan-anderson-GM5Yn5XRVqA-unsplash-medium.jpg">
+                        <img class="img-owner" src="images/nathan-anderson-GM5Yn5XRVqA-unsplash-min.jpg" alt="Nathan Anderson from Unsplash" loading="lazy">
+                    </picture>
+
+                    <p>Bountiful Foods is a small organic food business created on 1999 by Caroline Johnson. 
+                        Caroline has a master's degree in Nutrition from the University of Long Beach, California. 
+                        She has been in the business for several years as a dietitian and as manager and head of 
+                        Bountiful Foods serving and sharing with her customers the benefits of organic food and a balanced life.
+                    </p>
+                </section>
+                <section class="mission">
                     <h3>Our Mission</h3>
                     <p>Our mission is to bring the most healthy and organic products coming from 
                         the local farmers and national and international providers to your hand, ensuring the
                          environment preservation and quality of our organic products free of agrochemicals 
                          through our service focused on the customer and providing them wherever they visit 
-                         us, our fresh products prepared made to order. <br>We count on our 
+                         us, our fresh products prepared made to order. <br><br>We count on our 
                         central in Carlsbad, California, our coastal truck service from Los Angeles to San Diego,
                          managed directly by the owner, and our phone number and website to bring the best experiences
                           and attend to the concerns and needs of our customers.</p>
-                </div>
-                <div>
+                </section>
+                <section class="contact-info">
                     <h3>Contact Information</h3>
                     <img src="images/icons8-compra-entregada-48.png" alt="Compra Entrega icon from icons8">
                     <p>Address 111, Carlsbad, California, US</p>
@@ -56,15 +71,18 @@
                     <a href="#">+1 222 5555</a>
                     <img src="images/icons8-email-48.png" alt="email icon from icons8">
                     <a href="#">bountifulfoods@domail.com</a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook-nuevo-96.png" alt="facebook icon from icons8"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="images/icons8-instagram-96.png" alt="instagram icon from icons8"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="images/icons8-twitter-circled-96.png" alt="twitter icon from icons8"></a>
-                    
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook-nuevo-96.png" alt="facebook icon from icons8"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="images/icons8-instagram-96.png" alt="instagram icon from icons8"></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="images/icons8-twitter-circled-96.png" alt="twitter icon from icons8"></a>
+                    </div>    
 
-                </div>
-                <div>
+                </section>
+                <img class="img-question" src="https://via.placeholder.com/100x100/cccccc/9c9999?text=placeholder" data-src="images/jagoda-kondratiuk-GdXQWyeLiLM-unsplash-medium.jpg" alt="Jagoda Kondratiuk from Unsplash">
+                
+                <div class="about-questions">
+
                     <h3>Questions?</h3>
-                    <img src="images/jagoda-kondratiuk-GdXQWyeLiLM-unsplash.webp" alt="Jagoda Kondratiuk from Unsplash">
                     <form method="get">
                         <fieldset>
                             <legend>Leave us a message</legend>

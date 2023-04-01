@@ -1,5 +1,5 @@
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=da3e730a4e4f39d541f4572b928edac8"
-const dailyForecast = "http://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&cnt=24&units=imperial&appid=c83c1304bd4f8692cc89ce7411519651"
+const dailyForecast = "https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&cnt=24&units=imperial&appid=c83c1304bd4f8692cc89ce7411519651"
 
 const currentTemp = document.querySelector("#temperature");
 const weatherIcon = document.querySelector("#weather-icon");

@@ -39,33 +39,63 @@
             </header>
             <main class="fresh">
                 <div>
-                    <form method="get">
+                    <img class="fresh-juice" src="https://via.placeholder.com/100x100/cccccc/9c9999?text=placeholder" data-src="images/irene-fernandez-XJ_5csAf4xM-unsplash-small-min.jpg" alt="Irene Fernandez from Unsplash">
+                </div>
+                <div>
+                    <form id="fill-info">
                         <h2>Prepare Your Own Drink</h2>
                         <fieldset>
                             <legend>Fill this form to send your drink request</legend>
-                            <label class="top">First Name: <input type="text" name="fname"></label>
-                            <label class="top">E-mail<input type="email" name="email" placeholder="example@domain.com"></label> 
-                            <label>Phone Number* <input type="tel" name="tel"></label>
+                            <label class="top">First Name*: <input class="name" type="text" name="fname" required></label>
+                            <label class="top">E-mail*:<input class="email" type="email" name="email" placeholder="example@domain.com" required></label> 
+                            <label class="top">Phone Number*: <input class="number" type="tel" name="tel" required></label>   
                             
+                        </fieldset>
+                        <fieldset class="fruits-lst">
+                            <legend>Select 3 different fruits:</legend>
+
+                        </fieldset>
+                        <fieldset>
+                            <label class="top">Special Instructions: <textarea class="text-instruction"></textarea></label>
                         </fieldset>
     
                         <label><input type="hidden" name="timeSend" id="formDateSend"></label>
                         
-                        <label><input type="submit" name="sendBtn" value="Send My Request" class="sendBtn sendMsg"></label>
+                        <label><input type="submit" value="Send My Request" class="sendBtn"></label>
     
                     </form> 
                 </div>
-               
+
+                <div class="confirmation">
+                    <form id="send-info">
+                        <div>
+                            <h4>Confirm your selection</h4>
+                            <div class="personal-info"></div>
+                            <div class="selected-fruit"></div>
+                            <div class="instructions"></div>
+                            <div class="order-date"></div>
+                            <div class="total-amount"></div>
+
+                        
+                        </div>
+                        <button class="confirm">Confirm</button>
+                        <button class="cancel">Cancel</button>
+                    
+                        
+                        
+
+                    </form>
+                </div>
             </main>
             <footer>
                 <div class="address">
                     <p>Address 111, Carlsbad, California, US</p>
-                    <p href="#">+1 222 5555</p>
+                    <p>+1 222 5555</p>
                     <a href="#">bountifulfoods@domail.com</a>                
                 </div>
                 <div class="inside-link">
                     <a href="aboutus.html">About Us</a> <br>
-                    <a href="references.html" target="_blank">References</a>
+                    <a href="resources.html" target="_blank">References</a>
                 </div>
                 
                 <div class="social-link">
@@ -82,6 +112,7 @@
                 </div>
             </footer>
             <script src="scripts/app.js"></script>
+            <script src="scripts/fresh.js"></script>
             
         </body>
     </html>

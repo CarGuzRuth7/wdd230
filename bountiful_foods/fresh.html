@@ -38,10 +38,11 @@
                 </div> 
             </header>
             <main class="fresh">
-                <div>
+                <div class="fresh-image">
                     <img class="fresh-juice" src="https://via.placeholder.com/100x100/cccccc/9c9999?text=placeholder" data-src="images/irene-fernandez-XJ_5csAf4xM-unsplash-small-min.jpg" alt="Irene Fernandez from Unsplash">
                 </div>
-                <div>
+
+                <div class="form1">
                     <form id="fill-info">
                         <h2>Prepare Your Own Drink</h2>
                         <fieldset>
@@ -53,7 +54,7 @@
                         </fieldset>
                         <fieldset class="fruits-lst">
                             <legend>Select 3 different fruits:</legend>
-
+                            
                         </fieldset>
                         <fieldset>
                             <label class="top">Special Instructions: <textarea class="text-instruction"></textarea></label>
@@ -69,24 +70,43 @@
                 <div class="confirmation">
                     <form id="send-info">
                         <div>
-                            <h4>Confirm your selection</h4>
+                            <h3>Confirm your selection</h3>
+                            <hr>
+                            <div><b>Date:</b> <span class="order-date"></span></div>
+                            <hr>
                             <div class="personal-info"></div>
-                            <div class="selected-fruit"></div>
+                            <hr>
+                            <div><b>Fruits Selected:</b> <span class="selected-fruit"></span></div>
                             <div class="instructions"></div>
-                            <div class="order-date"></div>
-                            <div class="total-amount"></div>
-
+                            
+                            <hr>
+                            <div><b>Total Amout of Nutritions:</b> <br><span class="total-amount">-----------Select some fruits to make your request------------</span></div>
+                            <hr>
                         
                         </div>
-                        <button class="confirm">Confirm</button>
-                        <button class="cancel">Cancel</button>
-                    
-                        
-                        
+                        <div class="buttons">
+                            <button class="confirm">Confirm</button>
+                            <button class="cancel">Cancel</button>
+
+                        </div>
 
                     </form>
+
+                </div>
+                
+                <section class="display">
+                    <h4>Your Selection</h4>
+                    <div>Fruits Selected: <br><span class="selection-fruits"></span></div>
+                    <br>
+                    <div><b>Total Amout of Nutritions:</b> <span  class="selections">0</span></div>
+                </section>
+
+                <div class="drink">
+                    <img src="https://via.placeholder.com/100x100/cccccc/9c9999?text=placeholder" data-src="images/kitera-dent-e3iomuoQka0-unsplash.jpg" alt="Irene Fernandez from Unsplash">
+
                 </div>
             </main>
+
             <footer>
                 <div class="address">
                     <p>Address 111, Carlsbad, California, US</p>

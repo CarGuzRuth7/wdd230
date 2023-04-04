@@ -5,8 +5,50 @@ document.getElementById("last-update").textContent = `Last Update: ${update.getM
 
 //Get the current year
 const date = new Date();
-const currentYear = date.getFullYear();
-document.getElementById("date").textContent = currentYear;
+const daynames = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+];
+const months = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December"
+];
+
+const year = date.getFullYear();
+const fulldate = `${daynames[date.getDay()]} ${date.getDate()}, ${months[date.getMonth()]} ${year}`;
+
+document.getElementById("date").textContent = year;
+
+//Get the date forms are send
+const orderDate = document.querySelector(".order-date");
+const inputDate = document.getElementById("formDateSend");
+const sendBtn = document.querySelector(".sendBtn");
+
+if(sendBtn){
+sendBtn.addEventListener("click", ()=>{
+	inputDate.value = date
+  orderDate.textContent = fulldate
+})};
+
+const mssgBtn = document.querySelector(".sendMsg");
+if(mssgBtn){
+	mssgBtn.addEventListener("click", ()=>{alert("✅ Message Send")})
+};
 
 //Menu icon
 function toggleMenu(){

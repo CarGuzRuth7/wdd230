@@ -58,6 +58,8 @@ function displayResults(data){
     };
 
     //Display fruit list on document
+    let confirmBtn = document.querySelector(".confirm");
+
     checkInputs.forEach((input) =>{
         input.addEventListener("change", ()=>{
             
@@ -65,6 +67,8 @@ function displayResults(data){
             checkInputs.forEach(d =>{
                             if(d.checked){ 
                                  checkedFruits.push(d.value);
+                                 //confirm btn appears, else is no display to submit form
+                                 confirmBtn.style.display = "block"
                             };
             });
             selectedFruit.textContent = checkedFruits.join(", ")
@@ -122,18 +126,24 @@ function confirmInfo(){
     let form = document.querySelector("#fill-info");
     let confirmForm = document.querySelector(".confirmation");
     let form2 = document.querySelector("#send-info");
-    
+
+
 
     //Button events to confirm of cancel request
     let confirmBtn = document.querySelector(".confirm");
     let cancelBtn = document.querySelector(".cancel");
     let dataTotal = document.querySelector(".total-amount");
+
     confirmBtn.addEventListener("click", ()=>{ 
         
+        //let drink = Number(localStorage.getItem("drinks"))+1;
         if(dataTotal.textContent !== "-----------Select some fruits to make your request------------"){
+            
             form.onsubmit = "";
-            alert("✅ Request Submited")
             form.submit(); 
+            //alert("✅ Request Submited")
+            
+           // localStorage.setItem("drinks",drink)
         }
         
         

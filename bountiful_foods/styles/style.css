@@ -194,7 +194,8 @@ form,
 .confirm, 
 .sendBtn,
 .drink,
-.fresh-juice{
+.fresh-juice,
+.sendMsg{
     padding: .5rem;
     margin: .5rem;
     border: 1px solid #39375B;
@@ -317,9 +318,9 @@ form,
   right: 10%;
   background-color: #FFF;
 }
-.sendBtn, .fresh-juice{ width: 80%; }
+.sendBtn, .fresh-juice, .sendMsg{ width: 80%; }
 
-.sendBtn{ height: 3rem; }
+.sendBtn, .sendMsg{ height: 3rem; margin-left: 2.5rem; }
 
 
 /*About US page*/

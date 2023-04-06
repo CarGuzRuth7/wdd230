@@ -19,6 +19,9 @@ header,footer, h1, h2, h3, h4{
 }
 
 footer a:hover{ text-decoration: underline; }
+.footer-end hr{
+  border: 1px solid #34E5FF;
+}
 
 footer img{ width: 60px;}
 
